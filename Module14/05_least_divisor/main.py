@@ -10,5 +10,8 @@ def least_divisor(number):
                divisor_least = divisor_middle
     return divisor_least
 
-number = int(input('Введите число: '))
+if number <= 1:
+    print('Некорректный ввод, попробуйте снова.')
+else:
+    number = int(input('Введите число: '))
 print('Наименьший общий делитель, оличный от единицы : ', least_divisor(number))
