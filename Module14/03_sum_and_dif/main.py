@@ -10,6 +10,7 @@ def amount_of_num(number):
 
 print('Количество чисел: ', amount_of_num(number))
 
+
 def summ_of_num(number):
     summ_of_num = 0
     while number > 0:
@@ -17,7 +18,9 @@ def summ_of_num(number):
         number //= 10
     return summ_of_num
 
+
 print('Сумма чисел: ', summ_of_num(number))
+
 
 distinction = abs(summ_of_num(number) - amount_of_num(number))
 print('Разность суммы и количества цифр: ', distinction)
