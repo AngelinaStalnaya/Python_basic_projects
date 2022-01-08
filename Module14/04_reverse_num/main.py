@@ -3,7 +3,7 @@
 number1 = float(input('Введите первое число: '))
 number2 = float(input('Введите второе число: '))
 
-def rev_num(number1):
+def reverse_num(number1):
     new_num = ''
     first_part = ''
     second_part = ''
@@ -15,6 +15,6 @@ def rev_num(number1):
     new_num = first_part + '.' + second_part
     return float(new_num)
 
-print('Первое число наоборот: ', rev_num(number1))
-print('Второе число наоборот: ', rev_num(number2))
-print('Сумма чисел: ', rev_num(number1) + rev_num(number2))
+print('Первое число наоборот: ', reverse_num(number1))
+print('Второе число наоборот: ', reverse_num(number2))
+print('Сумма чисел: ', reverse_num(number1) + reverse_num(number2))
