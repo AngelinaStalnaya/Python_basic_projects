@@ -1,4 +1,4 @@
-## Задача 2. Сессия
+# Задача 2. Сессия
 
 print("Введите первую точку: ")
 x1 = float(input('X: '))
@@ -9,6 +9,8 @@ y2 = float(input('Y: '))
 
 x_diff = x1 - x2
 y_diff = y1 - y2
+if x_diff == 0:
+    x_diff = 1
 k = y_diff / x_diff
 b = y2 - k * x2
 
