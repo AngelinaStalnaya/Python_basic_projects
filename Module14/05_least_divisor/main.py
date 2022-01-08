@@ -11,7 +11,4 @@ def least_divisor(number):
     return divisor_least
 
 number = int(input('Введите число: '))
-if number <= 1:
-    print('Некорректный ввод, попробуйте снова.')
-else:
-    print('Наименьший общий делитель, оличный от единицы : ', least_divisor(number))
+print('Наименьший общий делитель, оличный от единицы : ', least_divisor(number))
