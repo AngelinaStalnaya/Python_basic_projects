@@ -1,4 +1,4 @@
-
+# сведения об OS
 import platform
 import sys
 
