@@ -1,8 +1,8 @@
 # Задача 6. Монетка 2
 
-print('Введите координаты монетки: ')
+print('Введите координаты монетки:')
 x_point = float(input('X: '))
-y_point = float(input('\n Y: '))
+y_point = float(input('Y: '))
 radius = float(input('Введите радиус: '))
 
 if x_point <= radius and y_point <= radius:
