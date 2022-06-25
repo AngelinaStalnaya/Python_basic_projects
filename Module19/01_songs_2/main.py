@@ -10,4 +10,14 @@ violator_songs = {
     'Clean': 5.83
 }
 
-# TODO здесь писать код
+
+total_length = 0
+songs = ['первой', 'второй', 'третьей', 'четвёртой', 'пятой', 'шестой', 'седьмой', 'восьмой', 'девятой']
+songs_num = int(input('Сколько песен выбрать? '))
+for i in range(songs_num):
+    print('Название', songs[i], end='')
+    song_name = input(' песни: ')
+    if song_name in violator_songs.keys():
+        total_length += violator_songs[song_name]
+
+print('Общее время звучания песен: ', total_length, 'минуты')
