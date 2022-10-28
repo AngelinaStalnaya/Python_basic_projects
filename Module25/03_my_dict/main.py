@@ -1,14 +1,14 @@
+class MyDict(dict):
 
-class MyDict():
-
-    def __init__(self, some_dict):
-        self.dictionary = some_dict
+    def __init__(self, dictionary):
+        super().__init__()
+        self.dict = dictionary
 
     def get(self, key):
         if isinstance(key, str):
             key = key.title()
-        if key in self.dictionary:
-            return self.dictionary[key]
+        if key in self.dict:
+            return self.dict[key]
         else:
             return 0
 
