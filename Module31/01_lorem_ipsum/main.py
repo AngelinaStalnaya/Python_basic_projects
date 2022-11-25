@@ -5,3 +5,9 @@ Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, v
 """
 
 # TODO здесь писать код
+import re
+
+if __name__ == '__main__':
+
+    result = re.findall(r'\b\w{4}\b', text)
+    print(result)
